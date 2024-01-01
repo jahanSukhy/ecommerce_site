@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesom icon  -->
+    <script src="https://kit.fontawesome.com/3dda576641.js" crossorigin="anonymous"></script>
+    <!-- bootstrap link icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- prouts detalis css  -->
+    <link rel="stylesheet" href="css/produts details.css">
+    <!-- lightslider css  -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!-- jqery js  -->
+    <script src="js/jquer.js"></script>
+    <!-- jquer js  -->
+    <script src="js/lightslider.js"></script>
+    <title>produts details</title>
+</head>
+
+<body>
+
+
+  <!-- headre part start  -->
+  <header class="header bg">
+    <!-- top header part start  -->
+    <div class="top-header py-md-3 py-sm-0">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- topheader part start  -->
+                <div class="d-md-none col-sm-1 col-1">
+                    <!-- =============================== navbar button start  =============================== -->
+                    <button class="btn d-md-none shadow-none rounded-0 order-3 " data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasMenu">
+                        <i class="bi bi-list text-white"></i>
+
+                    </button>
+                    <!-- =============================== navbar button end  =============================== -->
+                </div>
+                <div class="col-md-2 col-sm-2 col-2">
+                    <!-- header logo  -->
+                    <a href="index.html">
+
+                        <img src="img/logo.png" class="" style="width:100%; height: 40px;">
+                    </a>
+                </div>
+                <div class="col-md-7 col-sm-5 col-5 ">
+                    <!-- md search box  -->
+                    <div class="form-wrap d-md-block d-sm-none d-none">
+                        <div class="input-group mb-3 ">
+                            <input type="text" class="form-control " placeholder="" aria-label=""
+                                aria-describedby="button-addon2">
+                            <button class="btn bi bi-search text-white" type="button" style="background: #FF4D00;"
+                                id="button-addon2"></button>
+                        </div>
+                    </div>
+
+
+                    <!-- sm search box  -->
+                    <div class="search-wrap d-md-none d-sm-block" >
+                        <div class="px-md-3 px-sm-0 text-end dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="moblieMenuClick" style="line-height: 60px;">
+                            <i class="i-color bi bi-search "></i>
+                        </div>
+
+                        <div class="m-0 dropdown-menu p-0" style="z-index: 5; background: none; ">
+                            <div class="login-wrap">
+
+                                <form id="search-form" class="position-absolute w-100 py-1 d-md-block d-sm "
+                                    method="get" action="">
+                                    <div class="input-group ">
+                                        <input type="text" id="search-form-input" class="form-control p-0"
+                                            placeholder="" aria-label="" aria-describedby="search-form-btn" />
+                                        <button class="btn btn-danger shadow-none" type="button"
+                                            id="search-form-btn">Search</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-4 d-flex flex-row justify-content-between " style="align-items: center;">
+                    <!-- header phone icon   -->
+                    <a href="tel:+8801776192595" class="text-decoration-none fw-bold text-white">
+                        <i class="bi bi-telephone" style="color: #FF4D00; font-size: 24px;"></i>
+                        <span class="call-btn ">01980440044
+                        </span>
+                    </a>
+
+                    <!-- header cart icon  -->
+                    <a href="cartpage.html" class="text-decoration-none px-md-3 px-sm-0">
+                        <span class="span"></span>
+                        <i class="i-color bi bi-cart"></i>
+                    </a>
+
+                    <!-- .login area  -->
+                    <div class="login-wrap">
+                        <div class="px-md-3 px-sm-0 text-end dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="moblieMenuClick">
+                            <i class="i-color bi bi-person text-end "></i>
+                        </div>
+
+                        <!-- login dropdown area  0-->
+                        <div class="login position-absolute bg-white px-5 py-5 rounded-3 shadow-lg menu dropdown-menu "
+                            style="z-index: 5; right: 52px; ">
+                            <div class="login-wrap">
+                                <h5 class="text-center icon-color pb-3 fw-bold">Login to my account</h5>
+                                <form>
+
+
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Mobile Number*</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="017847093...">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password*</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="********">
+                                    </div>
+                                    <div class="d-grid pb-2 ">
+
+                                        <button type="submit" style="background-color: #198754;"
+                                            class="btn py-3 btn-primary">submit </button>
+                                    </div>
+                                </form>
+                                <p>New customer? <a href="signUp.html" class="text-decoration-none icon-color">
+                                        Create
+                                        your account </a></p>
+                                <p>Lost password? <a href="signUp.html" class="text-decoration-none icon-color">
+                                        Reset
+                                        account </a></p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top header part end -->
+    <hr class="text-white p-0 m-0">
+    <!-- bottom-header part start  -->
+    <div class="bottom-header">
+        <div class="container-fluid ">
+            <nav class="navbar navbar-expand-md navbar-light py-0">
+
+                <div class="collapse navbar-collapse  cs-Menu-Custom" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item border-end">
+                            <a class="nav-link text-uppercase text-white" href="#!">home & gadets</a>
+                        </li>
+                        <li class="nav-item border-end">
+                            <a class="nav-link text-uppercase text-white" href="kitchen&dinning.html">kitch &
+                                dining</a>
+                        </li>
+                        <li class="nav-item border-end">
+                            <a class="nav-link text-uppercase text-white" href="#!">health & beauty</a>
+                        </li>
+                        <li class="nav-item border-end">
+                            <a class="nav-link text-uppercase text-white" href="#!">baby & kids</a>
+                        </li>
+                        <li class="nav-item border-end">
+                            <a class="nav-link text-uppercase text-white" href="#!">shaver & trimmer</a>
+                        </li>
+                        <li class="nav-item border-end">
+                            <a class="nav-link text-uppercase text-white" href="#!">tools& flxtures</a>
+                        </li>
+                        <li class="nav-item border-end dropdown">
+
+                            <p class="nav-link text-uppercase text-white dropdown-toggle m-0"
+                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"> fashion &
+                                lifestyele
+                            </p>
+                            <ul class="dropdown-menu bg-black" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item  text-white text-uppercase" href="#">Undergarment</a>
+                                </li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">BLOCK &amp; Skin
+                                        PRINT <br> THREE
+                                        PIECE</a></li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Georgette Three
+                                        Piece</a></li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Saree</a></li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Digital Print Loan
+                                        <br> Cotton Three
+                                        Piece</a></li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Readymade Two
+                                        Piece</a></li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Boutiques Cotton
+                                        <br> Three Piece</a>
+                                </li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Readymade <br>
+                                        Embroidery One
+                                        Piece</a></li>
+                                <li><a class="dropdown-item text-white text-uppercase" href="#">Readymade Digital
+                                        <br> Print One
+                                        Piece</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-uppercase text-white" href="#!">WHOLESALE</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-- bottom-header part end  -->
+
+
+
+    <!-- offcanvas part start  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sportology
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <div class="list-group list-group-flush">
+                <a href="#!" class="fw-bold list-group-item list-group-item-action">
+                    home & gadets </a>
+                <a href="#!" class="fw-bold list-group-item list-group-item-action">
+                    kitch & dining</a>
+                <a href="#!" class="fw-bold list-group-item list-group-item-action">
+                    health & beauty</a>
+                <a href="#!" class="fw-bold list-group-item list-group-item-action">
+                    baby & kids</a>
+                <a href="#!" class="fw-bold list-group-item list-group-item-action">
+                    tools& flxtures</a>
+
+                <!-- submenu part start  -->
+                <a href="#submenu3" data-bs-toggle="collapse"
+                    class=" list-group-item list-group-item-action text-black d-flex flex-row fw-bold justify-content-between">
+                    <span class="">Products</span>
+                    <i class="bi bi-arrows-expand"></i>
+                </a>
+                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                    <li class="w-100">
+                        <a href="#" class=" list-group-item list-group-item-action"> Undergarment</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> <span class="">BLOCK &amp; Skin
+                                PRINT THREE
+                                PIECE</span> 2</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> Georgette Three Piece</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> Saree</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> Digital Print Loan Cotton Three
+                            Piece</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> Readymade Two Piece</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> <span class="">Boutiques Cotton
+                                Three Piece</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> <span class="">Readymade
+                                Embroidery One
+                                Piece</a>
+                    </li>
+                    <li>
+                        <a href="#" class=" list-group-item list-group-item-action"> Readymade Digital Print One
+                            Piece</a>
+                    </li>
+                    <li>
+                </ul>
+                <!-- submenu part end -->
+
+                <a href="#!" class="fw-bold list-group-item list-group-item-action">
+                    WHOLESALE</a>
+            </div>
+        </div>
+        <!-- offcanvas part end -->
+    </div>
+</header>
+
+  <!-- headre part end -->
+
+
+    <!-- Breadcrumb part start  -->
+    <div class="breadcrumb py-2 d-sm-none d-md-block d-none" style="background-color: #F2F2F2; font-size: 13px;">
+        <nav class="container-fluid d-flex flex-row justify-content-between ">
+            <ul class="nav d-flex">
+                <li><a href="index.html" class="text-black nav-link"> <i class="bi bi-chevron-right"></i>Home</a></li>
+                <li><a href="" class="text-black nav-link"> <i class="bi bi-chevron-right"></i>Products</a></li>
+                <li><a href="" class="text-black nav-link"> <i class="bi bi-chevron-right"></i>Zoomies Hands Free
+                        Binoculars</a></li>
+            </ul>
+            <ul class="nav">
+                <li><a href="index.html" class="text-black nav-link"> <i class="bi bi-chevron-left"></i>Back to Home</a></li>
+            </ul>
+        </nav>
+        </nav>
+    </div>
+    <!-- Breadcrumb part end  -->
+
+    <!-- procuts details start -->
+
+    <div class="product-details">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-12">
+                    <div class="product-img border d-flex flex-column my-3 mx-1">
+                        <div class="main_img">
+                            <img src="img/products/products details/main_img.jpg" alt="" srcset="">
+                        </div>
+                        <div class="all_main_img d-flex flex-row">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"
+                                style="width: 100%;">
+                                <ul class="autoWidth cS-hidden">
+                                    <li class="item-a">
+
+                                        <img src="img/products/products details/img_4.jpg" style="width: 223px;
+                                        height: 140px;">
+                                    </li>
+                                    <li class="item-b">
+
+                                        <img src="img/products/products details/img_4.jpg" style="width: 223px;
+                                        height: 140px;">
+                                    </li>
+                                    <li class="item-c">
+
+                                        <img src="img/products/products details/img_4.jpg" style="width: 223px;
+                                        height: 140px;">
+                                    </li>
+                                    <li class="item-d">
+                                        <img src="img/products/products details/img_4.jpg" style="width: 223px;
+                                        height: 140px;">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-12">
+                    <div class="product-details-box border my-3 mx-1 p-4">
+                        <div class="details-header">
+                            <h4 class="text-uppercase fw-bold py-2">FOLDABLE DESKTOP MOBILE STAND</h4>
+                            <div class="detail-box py-2" style="width: 18rem; background-color: #ddd;">
+                                <i class="bi bi-star-fill icon-color">4.9/5</i>
+                                <b>478 Sold</b>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <p class="m-0 mt-3"><b>SKU</b>:0787</p>
+                                <div class="icon">
+                                    <i class="bi bi-facebook i-btn"></i>
+                                    <i class="bi bi-twitter i-btn"></i>
+                                    <i class="bi bi-linkedin i-btn"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="details-text">
+                            <div class="price">
+                                <div class="d-flex flex-row">
+                                    <b class="">Price: </b>
+                                    <h4 class="icon-color px-2">Tk 350 <del style="color: #9CA3AF;">Tk 850</del></h4>
+                                    <span class="text-white p-2" style="font-size: 12px; background: #F97316; ">54.12%
+                                        Off</span>
+                                </div>
+                                <div class=" font-size">
+                                    <strong> Brand </strong> : NIZHUM
+                                </div>
+                                <div class="font-size">
+                                    <strong> Brand </strong> : Nizum
+                                </div>
+                                <p class="py-4">স্টাইলিশ মানুষদের জন্য আমরা নিয়ে এসেছি স্মার্ট ও ইউনিক ডিজাইনের Foldable
+                                    Desktop Mobile Stand. এখন আয়েশ করে দেখা যাবে মুভি, নাটক, গান, ভিডিও ইত্যাদি।</p>
+                                <div class="delivary">
+                                    <div class="row">
+                                        <div class="col-md-1 col-sm-1 col-1">
+
+                                            <i class="bi bi-boxes" style="font-size: 40px;"></i>
+                                        </div>
+                                        <div class="col-md-11 col-sm-11 col-11 font-size">
+
+                                            -> ঢাকা সিটির ভিতরে হোম ডেলিভারি 60Tk <br>
+                                            -> ঢাকা সিটির বাহিরে হোম ডেলিভারি 150Tk <br>
+                                            -> কুরিয়ার অফিস থেকে ডেলিভারি 120Tk
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="button-wrap">
+                                    <div class="button ">
+                                        <div class="quantity  my-3">
+                                            <div class="row">
+                                                <div class="quantity-wrap d-flex flex-row">
+                                                    <strong>Quantity</strong>
+                                                    <div class="border mx-4">
+                                                        <span class="border-end"><a href=""
+                                                                class="text-decoration-none text-dark   p-2 py-4  ">-</a></span>
+                                                        <span class=" border-end"><a href=""
+                                                                class="text-decoration-none text-dark p-2  ">1</a></span>
+                                                        <span class=" border-end"><a href=""
+                                                                class="text-decoration-none text-dark p-2 ">+</a></span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="fs-5 fw-bold total-amount d-sm-none d-none d-md-block">Total: 2250Tk
+                                        </div>
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6 m-0  font-sm-size font-md-size">
+                                                <a href="cartpage.html" class="text-decoration-none d-grid">
+                                                  <button type="submit"
+                                                    class="btn mx-1  p-md-3 p-sm-1 p-0 btn-bg fw-bold font-sm-size">add
+                                                    to
+                                                    cart</button>
+                                                </a> 
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6 m-0 d-grid font-sm-size font-md-size">
+
+                                                <button type="submit"
+                                                    class="btn  mx-1  p-md-3 p-sm-1 p-0 btn-primary fw-bold font-sm-size ">add
+                                                    to
+                                                    cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 d-grid">
+                                        <button
+                                            class="d-sm-none d-md-block d-none btn btn-12 m-1  p-2 btn-lg fw-bold fs-6"><a
+                                                href="tel:+8801776192595"
+                                                class="text-decoration-none text-white btn-12"><i
+                                                    class="bi bi-telephone test-white"
+                                                    style="font-size: 25px; "></i><strong>Call
+                                                    us:</strong>01776294695</a> </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- procuts details end -->
+
+    <!-- PRODUCT DESCRIPTION start   -->
+    <div class="product-descripition">
+        <div class="container-fluid">
+            <div class="product-descripition-wrap p-3 border">
+                <h3 class="text-center p-3 fw-bold fs-3">PRODUCT DESCRIPTION</h3>
+                <hr>
+                <ul>
+                    <li>i7 টোইস ওয়্যারলেস ইয়ারবাডস মিনি ব্লুটুথ ভি 4.2 / 5.0 স্টেরিও হেডসেট</li>
+                    <li>আইসিএলওয়েতে বিনামূল্যে শিপিংয়ের সাথে আই 7 এস মিনি টিডব্লিউএস ইয়ারফোনগুলি ডুয়াল ওয়্যারলেস
+                        ব্লুটুথ ইয়ারবাড কিনুন</li>
+                    <li>আইফোন অ্যান্ড্রয়েড ফোনের জন্য আই 7 টিডব্লিউএস টুইনস স্টিরিও ইন-কানের হেডফোনগুলির জন্য দুর্দান্ত
+                        ডিলগুলি সন্ধান করুন।</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- PRODUCT DESCRIPTION end  -->
+
+    <!-- procuts details end -->
+
+
+
+  <!-- /* products slider part start  */ -->
+  <div class="products" id="products">
+    <div class="container-fluid">
+      <div class="products-header d-flex flex-row justify-content-between my-5 mx-3">
+        <div class="h1 fw-bold " style="letter-spacing: .5px;">FlASH SALE</div>
+        <button class="btn btn-bg text-uppercase p-0 py-2 px-3">See All</button>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ul class="autoWidth cS-hidden" class="">
+          <li class="item-a">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_1.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+          <li class="item-b">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_2.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+          <li class="item-c">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_3.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+          <li class="item-d">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_4.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+          <li class="item-e">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_5.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+
+
+          <li class="item-f">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_6.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+
+
+          <li class="item-g">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_7.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+
+
+          <li class="item-h">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_5.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+
+
+          <li class="item-i">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_2.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+
+
+
+          <li class="item-j">
+            <a href="products details.html" class="text-decoration-none text-black">
+              <div class="box border m-4">
+                <div class="slide-img">
+                  <img src="img/products/p_4.jpg" alt="">
+                </div>
+                <div class="detail-box" style="background-color: #ddd;">
+                  <i class="bi bi-star-fill icon-color">4.9/5</i>
+                  <b>478 Sold</b>
+                </div>
+                <div class="box-text">
+                  <h4>Zomies Hands Free Binoculars</h4>
+                  <span style="font-size: 14px;">
+                    Code <strong>1111</strong>
+                  </span>
+                  <p>
+                    <ins class="text-decoration-none"> Tk 400</ins>
+                    <del style="color: #ddd;"> Tk 1400</del>
+                  </p>
+                  <div class="buttom-group d-flex flex-row ">
+                    <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                        CART</button></a>
+                    <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                  </div>
+                </div>
+  
+              </div>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- /* products slider part end */ -->
+
+    <!-- /* products slider part start  */ -->
+    <div class="products" id="products">
+        <div class="container-fluid">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ul class="autoWidth cS-hidden" class="">
+              <li class="item-a">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_1.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+              <li class="item-b">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_2.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+              <li class="item-c">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_3.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+              <li class="item-d">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_4.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+              <li class="item-e">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_5.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+    
+    
+              <li class="item-f">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_6.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+    
+    
+              <li class="item-g">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_7.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+    
+    
+              <li class="item-h">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_5.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+    
+    
+              <li class="item-i">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_2.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+    
+    
+    
+              <li class="item-j">
+                <a href="products details.html" class="text-decoration-none text-black">
+                  <div class="box border m-4">
+                    <div class="slide-img">
+                      <img src="img/products/p_4.jpg" alt="">
+                    </div>
+                    <div class="detail-box" style="background-color: #ddd;">
+                      <i class="bi bi-star-fill icon-color">4.9/5</i>
+                      <b>478 Sold</b>
+                    </div>
+                    <div class="box-text">
+                      <h4>Zomies Hands Free Binoculars</h4>
+                      <span style="font-size: 14px;">
+                        Code <strong>1111</strong>
+                      </span>
+                      <p>
+                        <ins class="text-decoration-none"> Tk 400</ins>
+                        <del style="color: #ddd;"> Tk 1400</del>
+                      </p>
+                      <div class="buttom-group d-flex flex-row ">
+                        <a href="cartpage.html"> <button type="button" class="btn btn-bg text-uppercase">ADD To
+                            CART</button></a>
+                        <a href=""> <button class="btn btn-primary text-uppercase mx-3">order now</button></a>
+                      </div>
+                    </div>
+      
+                  </div>
+                </a>
+    
+              </li>
+            </ul>
+          </div>
+    
+    
+        </div>
+      </div>
+      <!-- /* products slider part end */ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer part start  -->
+    <div class="footer bg p-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="tables text-white p-4">
+                        <p class="icon-color">Need Help?</p>
+                        <span>Call us <b> 01980440044</b></span> <br>
+                        <span>Email us <b> nizhumshop@gmail.com</b></span> <br>
+                        <span>Office Address <b> Nahar Plaza, Shop No- 504,</b></span> <br>
+                        <span>Level- 5, Hatirpool, Dhaka</span>
+                        <div class="icon">
+                            <i class="bi bi-facebook i-btn"></i>
+                            <i class="bi bi-twitter i-btn"></i>
+                            <i class="bi bi-linkedin i-btn"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 p-4">
+                    <div class="footer_img d-flex flex-column">
+                        <img src="img/footer-logo1.png" class="width">
+                        <img src="img/footer-logo-2.png" alt="" class="width" srcset="">
+                    </div>
+                </div>
+                <div class="col-md-2 p-4">
+                    <div class="tables">
+                        <p class="footer-head icon-color">Customers Account</p>
+                        <ul class="p">
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none ">Sign in</a>
+                            </li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">Create New
+                                    Account</a></li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">My shopping
+                                    Cart</a></li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">My Orders</a>
+                            </li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">User
+                                    Dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 p-4">
+                    <div class="tables">
+                        <p class="footer-head icon-color">Customers Account</p>
+                        <ul class="p">
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">Sign in</a>
+                            </li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">Create New
+                                    Account</a></li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">My shopping
+                                    Cart</a></li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">My Orders</a>
+                            </li>
+                            <li class="list-unstyled"><a href="" class="text-white text-decoration-none">User
+                                    Dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class=" coperight">
+                <p class="text-white"> Intellectual Property Protection, Privacy Policy, Terms of Use, User Information & Legal Enquiry
+                    Guide @
+                    2015-2022 Nizhum.com All Rights Reserved. Design & Developed by <button
+                        class="btn bg-white">WeHub</button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer part end -->
+
+
+
+    <!-- bootstrap js  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

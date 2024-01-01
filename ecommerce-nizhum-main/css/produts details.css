@@ -1,0 +1,69 @@
+
+.main_img img {
+    width: 100%;
+}
+
+
+
+/* <!-- procuts details start --> */
+.btn-primary{
+    background: #198754;
+}
+.btn-primary:hover{
+    background: #198754;
+}
+.delivary {
+    background: aliceblue;
+    padding: 15px;
+    border-radius: 13px;
+    color: blue;
+}
+.total-amount {
+    font-family: system-ui;
+}
+
+.btn-12{
+    background-color: #1CB841;
+    text-transform: none;
+    border-radius: none;
+}
+.btn-12:hover {
+    background-color: #4CAF50; /* Green */
+    color: #F19A3E !important;
+  }
+    /* <!-- procuts details end --> */
+
+
+
+    @media only screen and (max-width: 780px) {
+        /* products responsive start  */
+        .button {
+            position: fixed;
+            bottom: 0;
+            background: white;
+            display: flex;
+            z-index: 5;
+            box-shadow: 0px -2px 32px 9px black;
+            border-radius: 19px;
+            padding: 4px 35px;
+            margin: 0 auto;
+        }
+        .font-md-size{
+            font-size: 12px;
+            padding: 10px 0px;
+        }
+
+        /* products responsive end */
+      }
+      @media only screen and (max-width: 650px) {
+        /* products responsive start  */
+        .button {
+            font-size: 12px;
+        }
+        .font-sm-size{
+            font-size: 9px;
+            padding: 10px 0px;
+        }
+
+        /* products responsive end */
+      }

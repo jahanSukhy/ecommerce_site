@@ -1,0 +1,299 @@
+/* 
+
+1. General css 
+2. header part 
+3. products part 
+4. footer part  
+5. mobile responsive part
+
+*/
+
+
+
+/* ====================================
+1. General css
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: system-ui;
+
+}
+
+button {
+    text-transform: uppercase;
+    border-radius: 5px !important;
+}
+
+.bg {
+    background: #000000 !important;
+}
+
+.width {
+    width: 40%;
+}
+
+.font-size {
+    font-size: 14px;
+}
+/* ====================================
+2. header part start
+======================================== */
+
+
+.header {
+    background: #000000;
+}
+
+.icon-color {
+    color: #FF4D00;
+}
+
+.detail-box b {
+    color: #0ABE0A;
+}
+
+.i-color {
+    color: #F18424;
+    font-size: 28px;
+    font-family: 'bootstrap-icons';
+}
+
+i.bi.bi-list.text-white {
+    font-size: 25px;
+    line-height: 50px;
+    margin: -9px;
+}
+
+.span::before {
+    content: "2";
+    text-decoration: none;
+    position: relative;
+    right: -40px;
+    top: -22px;
+    background: orangered;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 11px;
+    color: navajowhite;
+}
+
+.cs-Menu-Custom ul li {
+    padding: 10px 8px;
+}
+
+a.nav-link.text-uppercase.text-white {
+    font-size: 14px;
+}
+
+.showMobileMenu {
+    display: block;
+}
+
+.login {
+    display: none;
+}
+
+/* header part end */
+
+/*=============================
+ 3.products part start
+ ============================  */
+
+.box-text {
+    padding: 14px;
+}
+
+.box:hover {
+    border: 1px solid #FF4D00 !important;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+.btn-bg {
+    background: #FF4D00;
+    color: white;
+}
+
+.btn-bg:hover {
+    color: white;
+    background-color: #DD4403;
+
+}
+
+.slide-img {
+    height: 300px;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    color: #222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+}
+
+.type span {
+    color: rgba(26, 26, 26, 0.5);
+}
+
+.price {
+    color: #333333;
+    font-size: 1.1rem;
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 95, 236, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* products part end */
+
+
+
+/* ===============================
+4.footer part start
+==================================  */
+.footer.bg.p-4 {
+    font-size: 14px;
+}
+
+.i-btn {
+    font-size: 16px;
+    color: black;
+    padding: 7px;
+    background: #E3E3E3;
+    margin: 5px !important;
+    border-radius: 50px;
+}
+
+
+.icon {
+    margin: 13px 0px;
+}
+
+ul.p {
+    padding-left: 0;
+}
+
+.coperight {
+    background: #FF4D00;
+    font-size: 14px;
+    padding: 8px 21px;
+    color: white;
+}
+
+.coperight p {
+    margin-top: 10px;
+}
+
+/* footer part end */
+
+
+
+
+
+
+
+/* ====================================
+5. mobile responsive part
+======================================== */
+@media only screen and (max-width: 1010px) {
+
+    /* header responsive start  */
+    a.nav-link.text-uppercase.text-white {
+        font-size: 12px;
+        /* padding: 13px 3px; */
+    }
+
+    .call-btn {
+        display: none !important;
+    }
+
+    /* header responsive end */
+
+}
+
+@media only screen and (max-width: 1080px) {
+
+    /* header responsive start  */
+    a.nav-link.text-uppercase.text-white {
+        font-size: 12px;
+        padding: 13px 3px;
+    }
+
+    /* header responsive end */
+
+}
+
+
+
+@media only screen and (max-width: 780px) {
+
+    /* header responsive start  */
+    .call-btn {
+        display: none !important;
+    }
+
+    .i-color {
+        font-size: 14px;
+    }
+
+    .bi-telephone {
+        font-size: 14px !important;
+    }
+
+    /* header responsive end */
+}
+
+@media only screen and (max-width: 480px) {
+
+    i {
+        font-size: 12px;
+    }
+
+    .bi-telephone {
+        font-size: 12px !important;
+    }
+
+}
